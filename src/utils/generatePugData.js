@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 const fs = require('fs');
 const path = require('path');
 
