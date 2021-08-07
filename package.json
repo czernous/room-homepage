@@ -20,14 +20,14 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "src/**/**/*.{js,ts,tsx}": [
       "prettier --write",
       "eslint --fix"
     ],
-    "*.pug": [
+    "src/**/**/*.pug": [
       "prettier --write"
     ],
-    "*.scss": [
+    "src/**/**/*.scss": [
       "stylelint --syntax scss --fix"
     ]
   },
