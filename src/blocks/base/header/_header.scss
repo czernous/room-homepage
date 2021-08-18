@@ -1,0 +1,35 @@
+.navbar {
+  display: none;
+  align-items: center;
+
+  @media (min-width: $md) {
+    display: flex;
+  }
+
+  &-mobile {
+    display: none;
+    @media (max-width: $md) {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    width: 5em;
+    height: 1em;
+  }
+}
+
+.nav {
+  &-links {
+    display: flex;
+    gap: 1em;
+
+    &__item {
+      list-style: none;
+
+      .link {
+        text-decoration: none;
+      }
+    }
+  }
+}

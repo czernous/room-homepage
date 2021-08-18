@@ -1,11 +1,15 @@
 include ../blocks/base/head/head
+include ../blocks/base/header/header
 
 block vars
 
 doctype html
 
-html(lang="en")
-    +head()
-    body
-        main
-            block content
+html(lang='en')
+  +head
+  body
+    div(style='display: none')
+      include ../common/sprite.svg
+    +header({href: '#', name: 'home'}, {href: '#', name: 'shop'}, {href: '#', name: 'about'}, {href: '#', name: 'contact'})
+    main
+      block content
