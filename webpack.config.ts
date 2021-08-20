@@ -108,6 +108,15 @@ const createConfig = (env: any, { mode = 'development' }): Configuration => {
             publicPath: '../',
           },
         },
+        // fonts
+        {
+          test: /\.(woff|woff2|eot|ttf)$/,
+          type: 'asset/resource',
+          generator: {
+            filename: '[path][name].[ext]',
+            publicPath: '../',
+          },
+        },
       ],
     },
     resolve: {

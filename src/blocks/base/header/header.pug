@@ -7,7 +7,17 @@ mixin header(...links)
         li.nav-links__item
           a.link(href=link.href)= link.name
   nav.navbar-mobile
-    ul.nav-links
-      each link in links
-        li.nav-links__item
-          a.link(href=link.href)= link.name
+    .mobile-menu
+      button.btn.menu-open
+        svg.navbar__icon-open(width='20px', height='20px')
+          use(xlink:href='#icon-hamburger')
+      svg.navbar__logo(width='10%', height='10%')
+        use(xlink:href='#logo')
+    .mobile-menu__open
+      button.btn.menu-close
+        svg.navbar__icon-open(width='20px', height='20px')
+          use(xlink:href='#icon-close')
+      ul.nav-links
+        each link in links
+          li.nav-links__item
+            a.link(href=link.href)= link.name

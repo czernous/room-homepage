@@ -1,5 +1,11 @@
 @use '../../scss/base/base';
 
+html {
+  font-family: 'Spartan', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 body {
   background: #f23;
   color: #eee;

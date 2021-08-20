@@ -12,5 +12,6 @@ module.exports = {
     'selector-no-qualifying-type': null,
     'declaration-property-value-disallowed-list': null,
     'selector-no-qualifying-type': null,
+    'selector-class-pattern': null,
   },
 };
