@@ -1,8 +1,10 @@
+// resets
+@import '../resets/normalize';
 // base style vars
 @import 'breakpoints';
 @import 'variables';
-
 //typography
 @import '../typography/fonts';
+@import '../typography/colors';
 // base structural els
 @import '../../blocks/base/header/header';

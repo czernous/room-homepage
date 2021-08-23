@@ -120,7 +120,7 @@ const createConfig = (env: any, { mode = 'development' }): Configuration => {
       ],
     },
     resolve: {
-      extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.scss', '.pug'],
+      extensions: ['.ts', '.tsx', '.js', '.jsx'],
     },
     output: {
       path: path.resolve(__dirname, 'dist'),

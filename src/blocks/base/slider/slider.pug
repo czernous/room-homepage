@@ -1,0 +1,18 @@
+mixin Slider(...slides)
+  .glide.slider
+    .glide__track(data-glide-el='track')
+      ul.glide__slides
+        each slide in slides
+          li.glide__slide.slide
+            .slide-image
+              img(src=slide.img.src, alt=slide.title)
+            .slide-description
+              h5.slide-description__title.heading__slide= slide.title
+              p.slide-description__body.text-gray= slide.text
+              .slide-description__cta
+                a.cta-link(href='#') Shop now
+                  svg.cta-link__icon(height='20px' width='35px')
+                    use(xlink:href='#icon-arrow')
+    .glide__arrows.slider-controls(data-glide-el='controls')
+      button.glide__arrow.glide__arrow--left(data-glide-dir='<') prev
+      button.glide__arrow.glide__arrow--right(data-glide-dir='>') next

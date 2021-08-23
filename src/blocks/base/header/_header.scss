@@ -3,6 +3,8 @@
   align-items: center;
   padding: 3em;
   font-size: 14px;
+  position: fixed;
+  z-index: 2;
 
   @media (min-width: $md) {
     display: flex;
@@ -10,9 +12,10 @@
 
   &-mobile {
     display: none;
-    position: relative;
-    z-index: 10;
     min-height: 4em;
+    position: sticky;
+    margin-bottom: -96px;
+    z-index: 10;
 
     button {
       border: none;
@@ -34,6 +37,13 @@
       height: 100%;
       display: flex;
       align-items: center;
+      transform: translateY(0);
+      transform-origin: top;
+      transition: 0.3s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .hidden {
+      transform: translateY(-100%);
     }
 
     .mobile-menu {
@@ -51,15 +61,13 @@
       color: $clr-black;
       background: $clr-white;
       justify-content: space-between;
-      height: 0;
-      visibility: hidden;
 
       button.menu-close {
         margin-left: 2em;
       }
 
       .nav-links {
-        z-index: 11;
+        z-index: 20;
         color: $clr-black;
         gap: 1em;
         margin-right: 2em;

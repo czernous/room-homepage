@@ -1,0 +1,48 @@
+@import '../../../../node_modules/@glidejs/glide/src/assets/sass/glide.core';
+
+.glide__slides {
+  margin: 0;
+}
+
+.slider {
+  .slide {
+    display: flex;
+
+    &-image {
+      display: flex;
+      min-width: 55%;
+
+      img {
+        display: flex;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-description {
+      padding: 8.5vw;
+      padding-bottom: 3em;
+
+      &__body {
+        line-height: 1.8;
+      }
+
+      &__cta {
+        margin-top: 3em;
+
+        .cta-link {
+          display: flex;
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 0.5em;
+          color: $clr-black;
+          font-size: 1em;
+
+          &__icon {
+            margin: -5px 0 0 2em;
+          }
+        }
+      }
+    }
+  }
+}
