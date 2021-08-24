@@ -7,6 +7,11 @@
 .slider {
   .slide {
     display: flex;
+    height: 600px;
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+    }
 
     &-image {
       display: flex;
@@ -21,7 +26,8 @@
 
     &-description {
       padding: 8.5vw;
-      padding-bottom: 3em;
+      //padding-bottom: 3em;
+      position: relative;
 
       &__body {
         line-height: 1.8;
@@ -37,9 +43,47 @@
           letter-spacing: 0.5em;
           color: $clr-black;
           font-size: 1em;
+          transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          &:hover {
+            color: $clr-darkgray;
+            svg {
+              fill: $clr-darkgray;
+            }
+          }
 
           &__icon {
             margin: -5px 0 0 2em;
+          }
+        }
+      }
+
+      .slider-controls {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        &__icon {
+          height: 3em;
+          width: 3em;
+        }
+
+        @media (max-width: $lg) {
+          top: -5em;
+          left: unset;
+          right: 0;
+        }
+
+        button {
+          height: 8em;
+          width: 8em;
+          border: none;
+          background: $clr-black;
+          margin-right: -4px;
+          cursor: pointer;
+          transition: 0.3s all cubic-bezier(0.215, 0.61, 0.355, 1);
+
+          &:hover {
+            background: $clr-darkergray;
           }
         }
       }

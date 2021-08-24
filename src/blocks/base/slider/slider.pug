@@ -13,6 +13,10 @@ mixin Slider(...slides)
                 a.cta-link(href='#') Shop now
                   svg.cta-link__icon(height='20px' width='35px')
                     use(xlink:href='#icon-arrow')
-    .glide__arrows.slider-controls(data-glide-el='controls')
-      button.glide__arrow.glide__arrow--left(data-glide-dir='<') prev
-      button.glide__arrow.glide__arrow--right(data-glide-dir='>') next
+              .glide__arrows.slider-controls(data-glide-el='controls')
+                button.glide__arrow.glide__arrow--left(data-glide-dir='<')
+                  svg.slider-controls__icon(height='20px' width='20px')
+                    use(xlink:href='#icon-angle-left')
+                button.glide__arrow.glide__arrow--right(data-glide-dir='>')
+                  svg.slider-controls__icon(height='20px' width='20px')
+                    use(xlink:href='#icon-angle-right')

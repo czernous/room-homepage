@@ -18,3 +18,26 @@ body {
     margin-top: 0;
   }
 }
+
+.description-section {
+  display: flex;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    padding: 4em;
+    max-width: 30%;
+  }
+
+  &__image {
+    display: flex;
+    width: 35%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
