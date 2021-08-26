@@ -22,17 +22,44 @@ body {
 .description-section {
   display: flex;
 
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $sm) {
+    margin-top: 3em;
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
     padding: 4em;
     max-width: 30%;
+
+    @media (max-width: $lg) {
+      max-width: unset;
+    }
+
+    @media (max-width: $sm) {
+      padding: 8.5vw;
+    }
+
+    .section-header {
+      text-transform: uppercase;
+      font-size: 1em;
+      letter-spacing: 0.3em;
+      margin-bottom: 0.5em;
+    }
   }
 
   &__image {
     display: flex;
     width: 35%;
+
+    @media (max-width: $lg) {
+      width: 100%;
+    }
 
     img {
       height: 100%;
