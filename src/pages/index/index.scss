@@ -11,6 +11,11 @@ body {
   color: $clr-black;
 }
 
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .heading {
   &__slide {
     font-size: 3em;

@@ -30,6 +30,10 @@
       //padding-bottom: 3em;
       position: relative;
 
+      @media (min-width: 1921px) {
+        padding: 9em;
+      }
+
       &__title {
         @media (max-width: $sm) {
           font-size: 2em;
@@ -77,6 +81,11 @@
             height: 1em;
             width: 1em;
           }
+
+          @media (min-width: 1921px) {
+            height: 4em;
+            width: 4em;
+          }
         }
 
         @media (max-width: $lg) {
@@ -111,6 +120,11 @@
           @media (max-width: $sm) {
             height: 3em;
             width: 3em;
+          }
+
+          @media (min-width: 1921px) {
+            height: 9em;
+            width: 10em;
           }
 
           &:hover {
